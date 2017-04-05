@@ -1,10 +1,8 @@
 ## Run the code
 --
-All the require packages are in requirements.txt, uncomment the line '#pip....' in run.sh to install the packages.
+This solution is using Python version 3.6.0. The required packages are numpy, Bottleneck and arrow.
+All the require packages and versions are listed in requirements.txt. Uncomment the line '#pip....' in run.sh to install the packages.
 
-Addition feature.
+I added one addition feature to detect the patter of a DoS attack. If an IP visited more than 10 times in 10 seconds,
+this IP will be blocked for 5 minutes. In my code, I will record the blocked IPs in log_output/DoS.txt
 
-Detected the pattern of a DoS attack, if an ip visited more than 10 times in 10 seconds, this ip will get blocked for
- 5 minutes.
-
- The blocked ips are recorded in log_output/DoS.txt

@@ -17,7 +17,9 @@ data = dict.fromkeys(keys)
 
 def rules(char):
     """
-    rules for filter chars
+    rules for filter chars,
+    for removing the unnecessary chars in each line,
+    and make the each line space seperated text
     :param char: a char
     :return:
     """
@@ -29,7 +31,7 @@ def rules(char):
 
 def convert_time(str_arr):
     """
-    convert date_time to timestamp
+    convert date_time from array to timestamp
     :param str_arr:
     :return:
     """
@@ -39,7 +41,7 @@ def convert_time(str_arr):
 
 def feature_1(output):
     """
-    feature 1
+    feature 1: List 10 most active IP 
     :param output:
     :return:
     """
@@ -69,7 +71,8 @@ def feature_1(output):
 
 def feature_2(output):
     """
-    feature 2
+    feature 2: Identify 10 resources that consume the most
+    bandwidth on the site
     :param output:
     :return:
     """
@@ -99,7 +102,8 @@ def feature_2(output):
 
 def feature_3(output):
     """
-    feature 3
+    feature 3: List the top 10 busiest 60-minute
+    periods
     :param output:
     :return:
     """
@@ -142,7 +146,8 @@ def feature_3(output):
 
 def feature_4(output):
     """
-    feature 4
+    feature 4: Block IPs that failed to login
+    with 20 seconds, and record the further login attemps
     :param output:
     :return:
     """
@@ -186,7 +191,8 @@ def feature_4(output):
 
 def feature_5(output):
     """
-    feature 5
+    feature 5: Block IPs that accessed the site
+    more than 10 times in 10 seconds, record them.
     :param output:
     :return:
     """
@@ -227,7 +233,8 @@ def feature_5(output):
 
 def read_log(file):
     """
-
+    use a dictionary to map string to int labels to use numpy array easily,
+    use another dictionary to map int lables to strings for recording
     :param file: input file path
     :return:
     """
